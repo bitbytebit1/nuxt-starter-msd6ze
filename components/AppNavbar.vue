@@ -101,6 +101,6 @@ export default {
 }
 .appNavbar__activator {
   position: absolute;
-  right: 0;
+  right: 10px;
 }
 </style>

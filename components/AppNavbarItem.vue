@@ -2,7 +2,7 @@
   <div
     class="appNavbar__item c-pointer"
     :class="{
-      'appNavbar__item--active': $route.name.split('__')[0] === item.routeName,
+      'appNavbar__item--active': $route.name === item.routeName,
     }"
   >
     {{ item.text }}
