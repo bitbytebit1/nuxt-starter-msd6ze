@@ -13,7 +13,7 @@
 export default {
   data() {
     return {
-      items: ['1', '2'],
+      items: ['1', '2', '3'],
     };
   },
 };
