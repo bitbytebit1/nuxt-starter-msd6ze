@@ -10,6 +10,7 @@
     <!-- Items -->
 
     <TransitionGroupStaggered
+      v-if="isNavbarVisible"
       class="appNavbar__items"
       :delay="500"
       name="slide-x"
@@ -17,7 +18,7 @@
       @click="toggleNavbar"
     >
       <AppNavbarItem
-        v-for="item in isNavbarVisible ? navbarItems : []"
+        v-for="item in navbarItems"
         :key="item.routeName"
         :item="item"
         @click.stop.native="pushRoute(item)"
@@ -59,7 +60,7 @@ export default {
         .sort((a, b) => a.text.localeCompare(b.text));
     },
     pushRoute(route) {
-      this.$router.push(this.localePath(route.routeName));
+      this.$router.push(route.routeName);
       this.isNavbarVisible = false;
     },
   },
