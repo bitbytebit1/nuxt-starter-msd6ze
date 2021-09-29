@@ -1,6 +1,7 @@
 <template>
   <div>
-    <Navbar />
+    <AppNavbar />
+    <br />
     <TransitionGroupStaggered>
       <BaseCard v-for="item in items" :key="item">
         Hello world {{ item }}
