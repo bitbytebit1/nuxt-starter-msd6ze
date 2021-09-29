@@ -5,7 +5,9 @@
         Hello world {{ item }}
       </BaseCard>
     </TransitionGroupStaggered>
-    <button @click="$router.push({ name: 'index' })">Go back to index</button>
+    <button @click="$router.push({ name: 'theOtherpage' })">
+      Go to the index
+    </button>
   </div>
 </template>
 
