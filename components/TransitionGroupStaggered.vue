@@ -14,6 +14,9 @@
 
 <script>
 export default {
+  mounted() {
+    console.log('hello');
+  },
   props: {
     name: { type: String, default: 'slide-x' },
     // Amount in ms

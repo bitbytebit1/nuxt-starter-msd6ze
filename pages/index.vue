@@ -2,7 +2,7 @@
   <div>
     <TransitionGroupStaggered>
       <BaseCard v-for="item in items" :key="item">
-        These components stagger just fine {{ item }}
+        These components stagger2 just fine {{ item }}
       </BaseCard>
     </TransitionGroupStaggered>
   </div>
