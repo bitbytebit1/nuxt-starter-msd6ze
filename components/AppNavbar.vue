@@ -30,7 +30,7 @@
       class="appNavbar__activator pa-10 c-pointer"
       @click.stop="toggleNavbar"
     >
-      <BaseIcon class="fs-38"> list </BaseIcon>
+      ACTIVATE NAVBAR
     </div>
   </nav>
 </template>
