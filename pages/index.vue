@@ -1,5 +1,6 @@
 <template>
   <div>
+    <AppNavbar />
     <TransitionGroupStaggered>
       <BaseCard v-for="item in items" :key="item">
         These components stagger2 just fine {{ item }}
